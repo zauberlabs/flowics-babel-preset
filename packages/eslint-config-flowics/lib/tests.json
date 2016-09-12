@@ -1,0 +1,15 @@
+{
+
+  "extends": "flowics/lib/backend",
+
+  "env": {
+    "mocha": true
+  },
+
+  "rules": {
+    "no-unused-expressions": 0,
+    "func-names": 0,
+    "max-nested-callbacks": 0
+  }
+
+}

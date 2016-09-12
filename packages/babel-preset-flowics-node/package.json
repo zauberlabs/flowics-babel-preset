@@ -1,0 +1,32 @@
+{
+  "name": "babel-preset-flowics-node",
+  "version": "0.0.1",
+  "description": "Babel preset for flowics node code",
+  "repository": "https://github.com/zauberlabs/javascript.git",
+  "main": "index.js",
+  "keywords": [
+    "babel",
+    "preset",
+    "flowics",
+    "node",
+    "es2015"
+  ],
+  "author": "Mariano Cortesi <mariano@flowcis.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "6.8.0",
+    "babel-plugin-transform-class-properties": "6.11.5",
+    "babel-plugin-transform-es2015-arrow-functions": "6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "6.9.0",
+    "babel-plugin-transform-es2015-function-name": "6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.14.0",
+    "babel-plugin-transform-es2015-parameters": "6.11.4",
+    "babel-plugin-transform-es2015-shorthand-properties": "6.8.0",
+    "babel-plugin-transform-es2015-spread": "6.8.0",
+    "babel-plugin-transform-es2015-sticky-regex": "6.8.0",
+    "babel-plugin-transform-es2015-unicode-regex": "6.11.0",
+    "babel-plugin-transform-exponentiation-operator": "6.8.0",
+    "babel-plugin-transform-object-rest-spread": "6.8.0",
+    "babel-plugin-transform-regenerator": "6.14.0"
+  }
+}

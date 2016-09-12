@@ -1,0 +1,25 @@
+{
+  "name": "babel-preset-flowics",
+  "version": "0.0.1",
+  "description": "Babel preset used in Flowics",
+  "repository": "https://github.com/zauberlabs/javascript.git",
+  "main": "index.js",
+  "keywords": [
+    "babel",
+    "preset",
+    "es6",
+    "flowics",
+    "react"
+  ],
+  "author": "Mariano Cortesi <mariano@flowics.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "6.8.0",
+    "babel-plugin-transform-class-properties": "6.11.5",
+    "babel-plugin-transform-exponentiation-operator": "6.8.0",
+    "babel-plugin-transform-object-rest-spread": "6.8.0",
+    "babel-plugin-transform-runtime": "6.15.0",
+    "babel-preset-es2015": "6.14.0",
+    "babel-preset-react": "6.11.1"
+  }
+}
