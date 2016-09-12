@@ -2,9 +2,25 @@
 
 Babel preset for node code in Flowics.
 
-Current version target node4.x
+# Versions
 
-## Current plugins
+## 2.x
+
+Targets node 6.x
+
+Plugins:
+
+ * babel-plugin-transform-es2015-modules-commonjs
+ * babel-plugin-transform-exponentiation-operator
+ * babel-plugin-transform-async-to-module-method
+ * babel-plugin-transform-object-rest-spread
+ * babel-plugin-transform-class-properties
+
+## 1.x
+
+Targets node 4.x
+
+Plugins:
 
  * babel-plugin-transform-es2015-function-name
  * babel-plugin-transform-es2015-sticky-regex
