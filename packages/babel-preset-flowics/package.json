@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-flowics",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Babel preset used in Flowics",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
