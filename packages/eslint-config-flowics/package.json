@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-flowics",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "ESLint's shareable config for Flowics JavaScript projects",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
