@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-flowics-node",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Babel preset for flowics node code",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
