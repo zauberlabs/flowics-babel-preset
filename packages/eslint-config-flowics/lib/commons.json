@@ -95,7 +95,6 @@
     "prefer-spread": 2,
     "prefer-template": 1,
     "comma-spacing": 2,
-    "valid-jsdoc": 1,
     "promise/param-names": 2,
     "promise/catch-or-return": 2,
     "promise/no-native": 2
