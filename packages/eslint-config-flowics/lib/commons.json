@@ -14,7 +14,8 @@
   },
 
   "plugins": [
-    "promise"
+    "promise",
+    "flowtype"
   ],
 
   "rules": {
@@ -97,7 +98,11 @@
     "comma-spacing": 2,
     "promise/param-names": 2,
     "promise/catch-or-return": 2,
-    "promise/no-native": 2
+    "promise/no-native": 2,
+    "flowtype/define-flow-type": 1,
+    "flowtype/no-dupe-keys": 2,
+    "flowtype/semi": 2,
+    "flowtype/use-flow-type": 1
   }
 
 }

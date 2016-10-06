@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-flowics",
-  "version": "7.0.3",
+  "version": "8.0.0",
   "description": "ESLint's shareable config for Flowics JavaScript projects",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
@@ -24,6 +24,7 @@
     "eslint": "3.x.x",
     "babel-eslint": "6.x.x",
     "eslint-plugin-promise": "2.0.1",
-    "eslint-plugin-react": "5.2.2"
+    "eslint-plugin-react": "5.2.2",
+    "eslint-plugin-flowtype": "2.19.0"
   }
 }
