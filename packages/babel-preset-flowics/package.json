@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-flowics",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Babel preset used in Flowics",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "author": "Mariano Cortesi <mariano@flowics.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-syntax-async-functions": "6.22.0",
+    "babel-plugin-syntax-async-functions": "6.13.0",
     "babel-plugin-transform-async-to-module-method": "6.22.0",
     "babel-plugin-transform-class-properties": "6.22.0",
     "babel-plugin-transform-exponentiation-operator": "6.22.0",
