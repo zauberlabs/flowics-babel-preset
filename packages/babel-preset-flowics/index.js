@@ -1,12 +1,12 @@
-import es2015 from 'babel-preset-es2015';
-import react from 'babel-preset-react';
-import flowStripTypes from 'babel-plugin-transform-flow-strip-types';
-import runtime from 'babel-plugin-transform-runtime';
-import exponentiationOperator from 'babel-plugin-transform-exponentiation-operator';
-import asyncFunctions from 'babel-plugin-syntax-async-functions';
-import asyncToModule from 'babel-plugin-transform-async-to-module-method';
-import objectRestSpread from 'babel-plugin-transform-object-rest-spread';
-import classProperties from 'babel-plugin-transform-class-properties';
+const es2015 = require('babel-preset-es2015');
+const react = require('babel-preset-react');
+const flowStripTypes = require('babel-plugin-transform-flow-strip-types');
+const runtime = require('babel-plugin-transform-runtime');
+const exponentiationOperator = require('babel-plugin-transform-exponentiation-operator');
+const asyncFunctions = require('babel-plugin-syntax-async-functions');
+const asyncToModule = require('babel-plugin-transform-async-to-module-method');
+const objectRestSpread = require('babel-plugin-transform-object-rest-spread');
+const classProperties = require('babel-plugin-transform-class-properties');
 
 module.exports = {
   presets: [
