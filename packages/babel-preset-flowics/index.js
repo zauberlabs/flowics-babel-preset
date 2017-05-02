@@ -1,11 +1,11 @@
-module.exports.default = function(context, opts = {}) {
+function preset(context, opts = {}) {
 
   // es2015 default modules options
-  const modules = opts.modules || 'commonjs';
+  var modules = opts.es6 ? false : 'commonjs';
 
   return {
     presets: [
-      ['es2015', { modules }],
+      ['es2015', { modules: modules }],
       'react'
     ],
     plugins: [
@@ -30,3 +30,17 @@ module.exports.default = function(context, opts = {}) {
     ],
   };
 }
+
+var oldConfig = preset({});
+
+exports.default = oldConfig;
+
+Object.defineProperty(oldConfig, "buildPreset", {
+  configurable: true,
+  writable: true,
+  enumerable: false,
+  value: preset
+});
+
+module.exports = exports["default"];
+
