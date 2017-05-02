@@ -1,28 +1,32 @@
-module.exports = {
-  presets: [
-    ['es2015', {
-      modules: false
-    }],
-    'react'
-  ],
-  plugins: [
-    // Flow Support
-    'transform-flow-strip-types',
+module.exports function(context, opts = {}) {
 
-    // sandbox polyfills, use babel runtine on apps
-    ['transform-runtime', {
-      polyfill: true,
-      regenerator: true
-    }],
+  // es2015 default modules options
+  const modules: opts.modules || 'commonjs';
 
-    // ES7+ Support
-    'transform-exponentiation-operator',
-    'syntax-async-functions',
-    ['transform-async-to-module-method', {
-      "module": "bluebird",
-      "method": "coroutine"
-    }],
-    'transform-object-rest-spread',
-    'transform-class-properties',
-  ],
-};
+  return {
+    presets: [
+      ['es2015', { modules }],
+      'react'
+    ],
+    plugins: [
+      // Flow Support
+      'transform-flow-strip-types',
+
+      // sandbox polyfills, use babel runtine on apps
+      ['transform-runtime', {
+        polyfill: true,
+        regenerator: true
+      }],
+
+      // ES7+ Support
+      'transform-exponentiation-operator',
+      'syntax-async-functions',
+      ['transform-async-to-module-method', {
+        "module": "bluebird",
+        "method": "coroutine"
+      }],
+      'transform-object-rest-spread',
+      'transform-class-properties',
+    ],
+  };
+}
