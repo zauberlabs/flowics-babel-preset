@@ -1,4 +1,4 @@
-module.exports function(context, opts = {}) {
+module.exports.default = function(context, opts = {}) {
 
   // es2015 default modules options
   const modules: opts.modules || 'commonjs';
