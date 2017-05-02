@@ -1,7 +1,7 @@
 module.exports.default = function(context, opts = {}) {
 
   // es2015 default modules options
-  const modules: opts.modules || 'commonjs';
+  const modules = opts.modules || 'commonjs';
 
   return {
     presets: [
