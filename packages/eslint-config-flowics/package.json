@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-flowics",
-  "version": "10.0.0",
+  "version": "11.0.0",
   "description": "ESLint's shareable config for Flowics JavaScript projects",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
@@ -14,10 +14,10 @@
   "author": "Mariano Cortesi <mariano@flowics.com>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "4.x.x",
     "babel-eslint": "7.x.x",
+    "eslint": "4.x.x",
+    "eslint-plugin-flowtype": "2.x.x",
     "eslint-plugin-promise": "3.x.x",
-    "eslint-plugin-react": "7.x.x",
-    "eslint-plugin-flowtype": "2.x.x"
+    "eslint-plugin-react": "7.x.x"
   }
 }
