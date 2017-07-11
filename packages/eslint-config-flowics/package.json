@@ -14,10 +14,10 @@
   "author": "Mariano Cortesi <mariano@flowics.com>",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "3.x.x",
+    "eslint": "4.x.x",
     "babel-eslint": "7.x.x",
-    "eslint-plugin-promise": "2.x.x",
-    "eslint-plugin-react": "6.x.x",
+    "eslint-plugin-promise": "3.x.x",
+    "eslint-plugin-react": "7.x.x",
     "eslint-plugin-flowtype": "2.x.x"
   }
 }
