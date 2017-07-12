@@ -4,6 +4,17 @@ Babel preset for node code in Flowics.
 
 # Versions
 
+## 3.x
+
+Targets node 8.x
+
+Plugins:
+
+ * babel-plugin-transform-class-properties
+ * babel-plugin-transform-es2015-modules-commonjs
+ * babel-plugin-transform-exponentiation-operator
+ * babel-plugin-transform-flow-strip-types
+
 ## 2.x
 
 Targets node 6.x

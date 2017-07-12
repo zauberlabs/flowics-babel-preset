@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-flowics-node",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "Babel preset for flowics node code",
   "repository": "https://github.com/zauberlabs/javascript.git",
   "main": "index.js",
@@ -14,12 +14,9 @@
   "author": "Mariano Cortesi <mariano@flowics.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-syntax-async-functions": "6.x.x",
-    "babel-plugin-transform-async-to-module-method": "6.x.x",
     "babel-plugin-transform-class-properties": "6.x.x",
     "babel-plugin-transform-es2015-modules-commonjs": "6.x.x",
     "babel-plugin-transform-exponentiation-operator": "6.x.x",
-    "babel-plugin-transform-flow-strip-types": "6.x.x",
-    "babel-plugin-transform-object-rest-spread": "6.x.x"
+    "babel-plugin-transform-flow-strip-types": "6.x.x"
   }
 }
