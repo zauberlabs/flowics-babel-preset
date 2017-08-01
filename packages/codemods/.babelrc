@@ -1,0 +1,5 @@
+{
+  "presets": [
+    [ "flowics", { "es6": false } ]
+  ]
+}
