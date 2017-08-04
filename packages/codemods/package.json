@@ -5,6 +5,8 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-flowics": "5.1",
+    "eslint": "^4.3.0",
+    "eslint-config-flowics": "^11.0.0",
     "jest": "^20.0.4"
   }
 }
