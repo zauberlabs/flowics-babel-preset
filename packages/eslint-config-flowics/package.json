@@ -15,9 +15,11 @@
   "license": "MIT",
   "peerDependencies": {
     "babel-eslint": "7.x.x",
-    "eslint": "4.x.x",
-    "eslint-plugin-flowtype": "2.x.x",
-    "eslint-plugin-promise": "3.x.x",
-    "eslint-plugin-react": "7.x.x"
+    "eslint": "4.x.x"
+  },
+  "optionalDependencies": {
+    "eslint-plugin-flowtype": ">= 2.0.0",
+    "eslint-plugin-promise": ">= 3.0.0",
+    "eslint-plugin-react": ">= 7.0.0"
   }
 }

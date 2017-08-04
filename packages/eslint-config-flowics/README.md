@@ -1,9 +1,79 @@
-eslint-config-flowics
-==================================
+
+#eslint-config-flowics
 
 Common coding conventions for ensuring consistent style across **Flowics** JavaScript projects
 
-# To publish a new version
+## Usage
+
+`eslint-config-flowics` exports several configuration, that can be combined with each other:
+
+- `lib/base`: Rules only from eslint (no plugins). Several style rules & best practices 
+- `lib/promises`: requires `eslint-plugin-promise` plugin. Promises checks & best practices
+- `lib/react`: requires `eslint-plugin-react` plugin. React checks & best practices
+- `lib/flowtype`: requires `eslint-plugin-flowtype` plugin. Flowtype checks & best practices
+- `lib/imports`: requires `eslint-plugin-import` plugin. Checks imports. Allows to detect 
+  if you are importing a symbol that is no exported in the source module. USE IT!
+- `lib/tests`: Use it to override `lib/base` to loosen up some rules in tests, and enable env jest & mocha.
+
+To use them, just configure your `.eslintrc.json` as:
+
+```js
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "flowics/lib/base",
+    "flowics/lib/promises",
+    "flowics/lib/react",
+    "flowics/lib/flowtype",
+    "flowics/lib/imports",
+    "flowics/lib/tests",
+  ]
+}
+```
+
+Just combine the ones you are interested in.
+
+### Old Usage
+
+The old way of using this config is still available (for now), but not recommend.
+
+You have a few *presets* that include several of the mentioned configs.
+
+- `lib/frontend`: Composes `base`,`promises`,`flowtype`,`imports`,`react` & adds `env: browser`
+- `lib/backend`: Composes `base`,`promises`,`flowtype`,`imports`,`react` & adds `env: node`
+
+Don't use them, it's better to compose the config on your own, so you only add the *traits* your project uses. (maybe you are not using flowtype or react, or don't care about promises rules)
+
+
+## Installation
+
+Install *eslint*, the config, and the required plugins
+
+```
+yarn add --dev eslint babel-eslint eslint-config-flowics
+```
+
+Optionally, if you use the `imports` config, also do:
+```
+yarn add --dev eslint-plugin-import
+```
+
+Optionally, if you use the `react` config, also do:
+```
+yarn add --dev eslint-plugin-react
+```
+
+Optionally, if you use the `promise` config, also do:
+```
+yarn add --dev eslint-plugin-promise
+```
+
+Optionally, if you use the `flowtype` config, also do:
+```
+yarn add --dev eslint-plugin-flowtype
+```
+
+## To publish a new version
 
 Run
 
@@ -14,73 +84,3 @@ npm publish
 And answer the questions!
 
 
-# Installation
-
-Install *eslint*, the config, and the required plugins
-
-```
-npm i --save-dev eslint babel-eslint eslint-config-flowics eslint-plugin-react eslint-plugin-promise
-```
-
-# Usage
-
-`eslint-config-flowics` exports 4 different configurations:
-- `backend` (default)
-- `frontend`
-- `tests`
-- `commons` (extended by all previous three)
-
-The common use case (for a project with server, client and development code) would be to create
-a `.eslintrc` file in the project's root folder and include the following line in it:
-```
-extends: flowics
-```
-
-This will enforce a backend coding style by default.
-
-- To allow proper linting of client code:
-  1. Create a `.eslintrc` in client code directory
-  2. Include the following snippet inside it:
-  ```YAML
-    env:
-      browser: true
-      node: false
-  ```
-
-- To allow proper linting of test code:
-  1. Create a `.eslintrc` in test code directory
-  2. Include the following snippet inside it:
-  ```YAML
-    env:
-      mocha: true
-  ```
-
-> NOTE: `frontend` and `tests` configuration are recommended only for more specific use cases, like a pure frontend project.
-
-## backend (default)
-
-Sets environment `node` to `true`.
-```
-extends: flowics
-```
-
-## frontend
-
-Sets environment `browser` to `true`
-```
-extends: flowics/lib/frontend
-```
-
-## tests
-
-Extends from `backend` and sets environment `mocha` to `true`
-```
-extends: flowics/lib/tests
-```
-
-## commons
-
-No environment assumption is made.
-```
-extends: flowics/lib/commons
-```

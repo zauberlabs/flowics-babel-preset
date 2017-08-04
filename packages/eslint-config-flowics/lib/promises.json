@@ -1,0 +1,7 @@
+{
+  "plugins": ["promise"],
+  "rules": {
+    "promise/param-names": 2,
+    "promise/catch-or-return": 2
+  }
+}

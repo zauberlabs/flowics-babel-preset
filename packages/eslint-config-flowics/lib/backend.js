@@ -7,6 +7,6 @@
     "flowics/lib/react"
   ],
   "env": {
-    "browser": true
+    "node": true
   }
 }

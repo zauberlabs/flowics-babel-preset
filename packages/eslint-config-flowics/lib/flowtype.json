@@ -1,0 +1,9 @@
+{
+  "plugins": ["flowtype"],
+  "rules": {
+    "flowtype/define-flow-type": 1,
+    "flowtype/no-dupe-keys": 2,
+    "flowtype/semi": 2,
+    "flowtype/use-flow-type": 1
+  }
+}
